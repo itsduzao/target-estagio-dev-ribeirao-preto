@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#target_logo {
+  max-height: 40px;
+}
+
+#question_one {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 150px;
+}
+
+.output-wrapper {
+  visibility: visible;
+  opacity: 1;
+}
+
+.output-wrapper.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
