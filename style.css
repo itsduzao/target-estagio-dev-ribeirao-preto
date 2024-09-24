@@ -4,11 +4,11 @@
   box-sizing: border-box;
 }
 
-#target_logo {
+#target-logo {
   max-height: 40px;
 }
 
-.question_statement {
+.question-statement {
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
