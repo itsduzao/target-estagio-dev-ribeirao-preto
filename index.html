@@ -11,31 +11,55 @@
   <header>
     <div class="app-header">
       <div id="logo">
-        <img id="target_logo" src="assets/logo.png" alt="Target logo">
+        <img id="target-logo" src="assets/logo.png" alt="Target logo">
       </div>
     <section id="questions">
-      <div id="questions_container">
-        <!-- <ol>
-          <li class="question_statement">Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</li>
-          <div class="input-wrapper">
-            <label for="fibonacciInput">Insira um número</label>
-            <input type="number" name="fibonacciInput" id="fibonacciInput">
-            <button type="button" id="fibonacciButton">Verificar</button>
-          </div>
-          <div class="output-wrapper hidden">
-            <div class="output-text">Resultado: <span id="fibonacciOutput"></span></div>
+      <div id="questions-scontainer">
+        <ol>
+          <!-- <div class="question-container">
+            <li class="question-statement">Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</li>
+            <div class="input-wrapper">
+              <label for="fibonacciInput">Insira um número</label>
+              <input type="number" name="fibonacciInput" id="fibonacciInput">
+              <button type="button" id="fibonacciButton">Verificar</button>
+            </div>
+            <div class="output-wrapper hidden">
+              <div class="output-text">Resultado: <span id="fibonacciOutput"></span></div>
+            </div>
           </div> -->
-          <!-- <li class="question_statement">Escreva um programa que verifique, em uma string, a existência da letra "a", seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.</li>
-          <div class="input-wrapper"></div>
-            <label for="containsLetterInput">Insira uma palavra</label>
-            <input type="text" name="containsLetterInput" id="containsLetterInput">
-            <button type="button" id="containsLetterButton">Verificar</button>
-          </div>
-          <div class="output-wrapper hidden">
-            <div class="output-text">Resultado: <span id="containsLetterOutput"></span></div>
+          <!-- <div class="question-container">
+            <li class="question-statement">Escreva um programa que verifique, em uma string, a existência da letra "a", seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.</li>
+            <div class="input-wrapper">
+              <label for="containsLetterInput">Insira uma palavra</label>
+              <input type="text" name="containsLetterInput" id="containsLetterInput">
+              <button type="button" id="containsLetterButton">Verificar</button>
+            </div>
+            <div class="output-wrapper hidden">
+              <div class="output-text">Resultado: <span id="containsLetterOutput"></span></div>
+            </div>
           </div> -->
-          <li><p>Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);</p>
-          <p>Ao final do processamento, qual será o valor da variável SOMA? </p></li>
+          <div class="question-container">
+            <li class="question-statement"><p>Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1; enquanto K < INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);</p>
+            <p>Ao final do processamento, qual será o valor da variável SOMA? </p></li>
+            <div class="input-container">
+              <div class="input-wrapper">
+                <label for="indexInput">Índice</label>
+                <input type="number" name="indexInput" id="indexInput" value="12">
+              </div>
+              <div class="input-wrapper">
+                <label for="accumulatorInput">Soma</label>
+                <input type="number" name="accumulatorInput" id="accumulatorInput" value="0">
+              </div>
+              <div class="input-wrapper">
+                <label for="countInput">K</label>
+                <input type="number" name="countInput" id="countInput" value="1">
+              </div>
+            </div>
+            <button type="button" id="sumValuesUpToLimitButton">Verificar</button>
+            <div class="output-wrapper hidden">
+              <div class="output-text">Resultado: <span id="sumValuesUpToLimitOutput"></span></div>
+            </div>
+          </div>
           <!-- <li>Descubra a lógica e complete o próximo elemento:</li>
           <ol type="a">
             <li>1, 3, 5, 7, ___</li> 
