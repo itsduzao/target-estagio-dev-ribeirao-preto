@@ -1,5 +1,5 @@
 import { fibonacciSequenceGenerator } from './fibonacciSequenceGenerator.js';
-import { isInFibonacci } from './isIsFibonacci.js';
+import { isInFibonacci } from './isInFibonacci.js';
 import { displayResultMessage } from './displayResultMessage.js';
 import { showElement } from './showElement.js';
 
