@@ -7,7 +7,7 @@ export function sumValuesUpToLimitHandler(){
   const count = Number(document.getElementById('countInput').value)
   const accumulator = Number(document.getElementById('accumulatorInput').value)
   const result = sumValuesUpToLimit({limit, count, accumulator})
-  const message = `o valor da variável SOMA é ${result}.`
+  const message = `O valor da variável SOMA é ${result}.`
   const output = document.querySelector('#sumValuesUpToLimitOutput')
   showElement(output)
   displayResultMessage(message, output)
