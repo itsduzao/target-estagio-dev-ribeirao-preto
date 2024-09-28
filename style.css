@@ -1,5 +1,5 @@
 /*  TODO 1. [x] Ajustar inputs da questão 3.
-    TODO 3. [] Identar lista da questão 4.
+    TODO 3. [x] Identar lista da questão 4.
     TODO 2. [ ] Editar botões */
 
 * {
@@ -152,4 +152,20 @@ input[type=number] {
 .output-wrapper.hidden {
 display: none;
 opacity: 0;
+}
+
+.upper-alpha-parentheses-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  list-style-position: inside;
+  counter-reset: items;
+}
+
+.upper-alpha-parentheses-list li{
+  counter-increment: items;
+}
+
+.upper-alpha-parentheses-list li::marker{
+  content: counter(items, upper-alpha)  ") ";
 }
