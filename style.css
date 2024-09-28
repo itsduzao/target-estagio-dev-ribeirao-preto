@@ -1,5 +1,5 @@
-/*  TODO 1. [ ] Ajustar inputs da questão 3.
-    TODO 3. [ ] Identar lista da questão 4.
+/*  TODO 1. [x] Ajustar inputs da questão 3.
+    TODO 3. [] Identar lista da questão 4.
     TODO 2. [ ] Editar botões */
 
 * {
@@ -85,6 +85,13 @@ h2 {
   max-width: 150px; */
 }
 
+.input-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .input-wrapper{
   display: flex;
   justify-content: center;
@@ -128,7 +135,6 @@ input[type=number] {
 .inputNumber{
   width: 70px;
 }
-
 
 .output-wrapper{  
   opacity: 1;
