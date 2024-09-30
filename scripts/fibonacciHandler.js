@@ -10,7 +10,7 @@ export function fibonacciHandler(){
   const fibonacciInput = Number(document.querySelector("#fibonacciInput").value)
   const fibonacciSequence = fibonacciSequenceGenerator(fibonacciInput)
   const result = isInFibonacci(fibonacciSequence, fibonacciInput)
-  const message = result ? `O número faz parte da sequência` : `O número não faz parte da sequência`
+  const message = result ? `O número ${fibonacciInput} faz parte da sequência` : `O número ${fibonacciInput} não faz parte da sequência`
   const fibonacciOutput = document.querySelector('#fibonacciOutput')
   showElement(fibonacciOutput)
   displayResultMessage(message, fibonacciOutput)
