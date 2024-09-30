@@ -1,9 +1,9 @@
 import { sumValuesUpToLimit } from './sumValuesUpToLimit.js';
-import { showElement } from './showElement.js';
-import { displayResultMessage } from './displayResultMessage.js';
-import { isEmpty } from './isEmpty.js';
-import { returnEmptyFields } from './returnEmptyFields.js';
-import { createFlexibeMessage } from './CreateFlexibeMessage.js';
+import { showElement } from '../utils/showElement.js';
+import { displayResultMessage } from '../utils/displayResultMessage.js';
+import { isEmpty } from '../utils/isEmpty.js';
+import { returnEmptyFields } from '../utils/returnEmptyFields.js';
+import { createFlexibeMessage } from '../utils/CreateFlexibeMessage.js';
 
 export function sumValuesUpToLimitHandler(){
   const indexInput = document.getElementById('indexInput')

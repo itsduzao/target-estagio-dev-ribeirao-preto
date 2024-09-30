@@ -1,8 +1,8 @@
 import { fibonacciSequenceGenerator } from './fibonacciSequenceGenerator.js';
 import { isInFibonacci } from './isInFibonacci.js';
-import { displayResultMessage } from './displayResultMessage.js';
-import { showElement } from './showElement.js';
-import { isEmpty } from './isEmpty.js';
+import { displayResultMessage } from '../utils/displayResultMessage.js';
+import { showElement } from '../utils/showElement.js';
+import { isEmpty } from '../utils/isEmpty.js';
 
 export function fibonacciHandler(){
   const { value } = document.querySelector("#fibonacciInput")

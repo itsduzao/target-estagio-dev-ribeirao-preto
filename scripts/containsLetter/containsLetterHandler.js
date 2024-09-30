@@ -1,7 +1,7 @@
 import { containsLetter } from './containsLetter.js';
-import { showElement } from './showElement.js';
-import { displayResultMessage } from './displayResultMessage.js';
-import { isEmpty } from './isEmpty.js';
+import { showElement } from '../utils/showElement.js';
+import { displayResultMessage } from '../utils/displayResultMessage.js';
+import { isEmpty } from '../utils/isEmpty.js';
 
 export function containsLetterHandler(){
   const { value } = document.querySelector("#containsLetterInput")
