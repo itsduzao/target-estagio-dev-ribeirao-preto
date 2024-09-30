@@ -5,12 +5,12 @@ import { showElement } from './showElement.js';
 import { isEmpty } from './isEmpty.js';
 
 export function fibonacciHandler(){
-  const input = document.querySelector("#fibonacciInput").value
-  const isFieldEmpty = isEmpty(input)
+  const { value } = document.querySelector("#fibonacciInput")
+  const isFieldEmpty = isEmpty(value)
   const fibonacciOutput = document.querySelector('#fibonacciOutput')
 
   if (!isFieldEmpty) {
-    const fibonacciInput = Number(document.querySelector("#fibonacciInput").value)
+    const fibonacciInput = Number(value)
     const fibonacciSequence = fibonacciSequenceGenerator(fibonacciInput)
     const result = isInFibonacci(fibonacciSequence, fibonacciInput)
     const message = result ? `O número ${fibonacciInput} faz parte da sequência` : `O número ${fibonacciInput} não faz parte da sequência`
