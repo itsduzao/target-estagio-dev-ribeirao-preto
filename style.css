@@ -45,12 +45,25 @@ body * {
   top: 0;
 }
 
-#logo{  
+.app-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.company-brand-container{  
   padding: 12px 16px 12px 24px;
 }
 
 #target-logo {
   max-height: 40px;
+}
+
+
+
+#github-logo {
+  max-height: 24px;
+  stroke: var(--btn-primary-text-color)
 }
 
 h1 {
