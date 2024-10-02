@@ -19,7 +19,7 @@
         </div>
         <div class="nav-container">          
           <nav class="question-links">
-            <div class="question-link-container"><a href="#" class="question-link">Q1</a></div>
+            <div class="question-link-container"><a href="#" class="question-link active">Q1</a></div>
             <div class="question-link-container"><a href="#" class="question-link">Q2</a></div>
             <div class="question-link-container"><a href="#" class="question-link">Q3</a></div>
             <div class="question-link-container"><a href="#" class="question-link">Q4</a></div>
@@ -48,9 +48,11 @@
             <div class="question-statement">
               <p>Dado a sequência de Fibonacci, onde se inicia por 0 e 1 e o próximo valor sempre será a soma dos 2 valores anteriores (exemplo: 0, 1, 1, 2, 3, 5, 8, 13, 21, 34...), escreva um programa na linguagem que desejar onde, informado um número, ele calcule a sequência de Fibonacci e retorne uma mensagem avisando se o número informado pertence ou não a sequência.</p>
             </div>
-            <div class="input-wrapper">
-              <label for="fibonacciInput">Insira um número</label>
-              <input type="number" min="0" oninput="validity.valid||(value='');" name="fibonacciInput" id="fibonacciInput" class="inputNumber">
+            <div class="question-interaction-container">
+              <div class="input-wrapper">
+                <label for="fibonacciInput">Insira um número</label>
+                <input type="number" min="0" oninput="validity.valid||(value='');" name="fibonacciInput" id="fibonacciInput" class="inputNumber">
+              </div>
               <button type="button" id="fibonacciButton">Verificar</button>
             </div>
             <div class="output-wrapper hidden">
@@ -63,9 +65,11 @@
             <div class="question-statement">
             <p>Escreva um programa que verifique, em uma string, a existência da letra "a", seja maiúscula ou minúscula, além de informar a quantidade de vezes em que ela ocorre.</p>
           </div>
-            <div class="input-wrapper">
-              <label for="containsLetterInput">Insira uma palavra</label>
-              <input type="text" oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')" name="containsLetterInput" id="containsLetterInput">
+            <div class="question-interaction-container">
+              <div class="input-wrapper">
+                <label for="containsLetterInput">Insira uma palavra</label>
+                <input type="text" oninput="this.value = this.value.replace(/[^a-zA-ZÀ-ÿ\s]/g, '')" name="containsLetterInput" id="containsLetterInput">
+              </div>
               <button type="button" id="containsLetterButton">Verificar</button>
             </div>
             <div class="output-wrapper hidden">
@@ -79,18 +83,20 @@
               <p>Observe o trecho de código abaixo: int INDICE = 12, SOMA = 0, K = 1; enquanto K &lt; INDICE faça { K = K + 1; SOMA = SOMA + K; } imprimir(SOMA);</p>
               <p>Ao final do processamento, qual será o valor da variável SOMA? </p>
             </div>
-            <div class="input-container">
-              <div class="input-wrapper">
-                <label for="indexInput">Índice</label>
-                <input type="number" min="0" oninput="validity.valid||(value='');"  name="Índice" id="indexInput" class="inputNumber" value="12">
-              </div>
-              <div class="input-wrapper">
-                <label for="accumulatorInput">Soma</label>
-                <input type="number" min="0" oninput="validity.valid||(value='');"  name="Soma" id="accumulatorInput" class="inputNumber" value="0">
-              </div>
-              <div class="input-wrapper">
-                <label for="countInput">K</label>
-                <input type="number" min="0" oninput="validity.valid||(value='');"  name="K" id="countInput" class="inputNumber" value="1">
+            <div class="question-interaction-container">
+              <div class="input-container">
+                <div class="input-wrapper">
+                  <label for="indexInput">Índice</label>
+                  <input type="number" min="0" oninput="validity.valid||(value='');"  name="Índice" id="indexInput" class="inputNumber" value="12">
+                </div>
+                <div class="input-wrapper">
+                  <label for="accumulatorInput">Soma</label>
+                  <input type="number" min="0" oninput="validity.valid||(value='');"  name="Soma" id="accumulatorInput" class="inputNumber" value="0">
+                </div>
+                <div class="input-wrapper">
+                  <label for="countInput">K</label>
+                  <input type="number" min="0" oninput="validity.valid||(value='');"  name="K" id="countInput" class="inputNumber" value="1">
+                </div>
               </div>
               <button type="button" id="sumValuesUpToLimitButton">Verificar</button>
             </div>
